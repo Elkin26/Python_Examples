@@ -1,0 +1,6 @@
+#Exercise:Write a program which prompts the user for a Celsius temperature,
+#convert the temperature to Fahrenheit, and print out the converted temperature.
+#======================*****************===============================
+celsios= raw_input('Ingresar Temperatura en Grados Celsios:')
+f=float(celsios) *9/5 + 32
+print 'Temperatura en Grados Fahrengey:', f
