@@ -1,0 +1,24 @@
+#Rewrite your pay computation to give the employee 1.5 times the hourly rate for
+#hours worked above 40 hours.
+#475 = 40 * 10 + 5 * 15
+
+#Enter Hours: 45
+#Enter Rate: 10
+#Pay: 475.0
+#==============================================================================
+#Ingreso de los Valores
+H=raw_input ('Enter Hours:')
+R=raw_input ('Enter Rate:')
+#Operaciones
+p= float(H) * float(R)
+a=float (R) * 40.0
+L=float(H)-40
+K=L*15
+e=a+K
+#Condicioanles e impresion de resultados
+if float (H) >=40:
+    print 'Pay:',e
+else:
+    print 'Pay:',p
+
+print 'Done'
