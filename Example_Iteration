@@ -1,0 +1,32 @@
+# write a program which repeatedly reads numbers until the user enters
+# "done". Once "done" is entered, print out the total, count, average,
+# maximun and minimum of the numbers. if the user enters anything other
+# than a numbers.detect their mistake using try and except and print
+# an error message and skip to the next numberself.
+# =======================================================================
+count=0
+sum=0
+smallest=None
+large = -1
+while True:
+    try:
+        line = raw_input ('Enter a number:')
+        if line == 'done':
+            print 'Sum:', sum, 'Count:', count,'Average:', Average, 'Min:', smallest, 'Max:', large
+            break
+        n=int(line)
+        count=count+1
+        sum=sum+n
+        Average= float (sum)/float(count)
+    # here define the maximum of the numbers
+        if n > large:
+            large=n
+    # here define the minimum of the numbers
+        if smallest is None:
+            smallest=n
+        elif n < smallest:
+            smallest=n
+#when detect a mistake print an error message "bad data" and skip to the next number
+
+    except:
+        print 'Invalid input'
